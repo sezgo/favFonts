@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Favorite Fonts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fonts/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link id="themeLink" rel="stylesheet" href="whiteTheme.css">
+    <script src="script.js"></script>
+  </head>
+  <body onload="loadFonts()">
+
+    <a name="top"></a>
+
+    <header>
+      <a href="#">
+        <div class="logo">
+          <img src="./google-logo.png">
+          <span>Fonts</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#">CATALOG</a></li>
+          <li><a href="#">FEATURED</a></li>
+          <li><a href="#">ARTICLES</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="search-container">
+      <input type="text" id="fontSearch" placeholder="Search fonts">
+      <input type="text" id="fontText" placeholder="Type something" onkeyup="updateFontCards()">
+      <select id="fontSize" name="fontSize" onchange="updateFontSize()">
+        <option>20px</option>
+        <option>24px</option>
+        <option>32px</option>
+        <option>40px</option>
+      </select>
+
+      <div class="btnContainer">
+        <div class="colorButtons">
+          <button type="button" name="blackTheme" id="blackTheme" onclick="toggleTheme(this)"></button>
+          <button type="button" name="whiteTheme" id="whiteTheme" onclick="toggleTheme(this)"</button>
+        </div>
+        <button type="button" name="button" onclick="changeView()">
+          <i class="fas fa-list" id="view"></i>
+          <!-- <i class="fas fa-border-all"></i> -->
+        </button>
+        <button type="button" name="refresh" onclick="reset()">
+          <i class="fas fa-redo-alt"></i>
+        </button>
+      </div>
+      </div>
+
+    <main>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Roboto</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">Christian Robertson</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Gayathri</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">SMC</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Chilanka</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">SMC</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Open Sans</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">Steve Matteson</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Lato</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">Lukasz Dziedzic</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Manjari</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">Santosh Thottingal</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Montserrat</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">Jylietta Ulanovsky</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+      <div class="font">
+        <div class="font-info">
+          <div class="fontNamePlusCircleContainer">
+            <h5 class="fontName">Roboto Condensed</h5>
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div>
+          <span class="fontAuthor">Christian Robertson</span>
+        </div>
+        <p class="fontText">Then came the night of the first falling star.</p>
+      </div>
+
+    </main>
+    <a href="#top" id="backtotop"><i class="fas fa-arrow-up"></i></a>
+    <footer>coded by Sezgo | 2020 | Chingu Pre-Work Project</footer>
+  </body>
+</html>

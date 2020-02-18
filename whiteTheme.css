@@ -1,0 +1,12 @@
+input, select, button, body {
+    background-color: white;
+}
+
+.fontName, input, select, button, footer {
+    color: black;
+}
+
+.font .font-info .fontNamePlusCircleContainer button i {
+    background-color: white;
+    color: red;
+}

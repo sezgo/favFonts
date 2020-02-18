@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body{
+  font-family: Arial;
+}
+
+input, select{
+  border-style: hidden;
+  border-right: 1px solid lightgray;
+}
+
+button {
+  border-style: hidden;
+  cursor: pointer;
+}
+
+header{
+  padding:20px 40px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+header .logo {
+  color: #808080;
+  font-size: 24px;
+  font-family: Roboto;
+  display: flex;
+}
+
+header .logo img {
+  height: 29px;
+  margin-right: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #777777;
+  font-size: 11px;
+}
+
+.search-container {
+  border-radius: 25px;
+  border: 1px solid lightgray;
+  margin: 20px 40px;
+  padding: 5px 40px;
+  display: flex;
+}
+
+.search-container input,select {
+  flex-grow: 0.30;
+}
+.search-container .btnContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 0.3;
+}
+#blackTheme{
+  border: 1px solid white;
+}
+#whiteTheme{
+  border: 1px solid black;
+}
+.search-container #fontText, .colorButtons, button, select {
+  display: none;
+}
+
+
+.search-container button[name="refresh"] {
+  display: block;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px 50px;
+}
+
+.font {
+  overflow: hidden;
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 250px;
+  padding-top: 10px;
+}
+
+.font .font-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.font .font-info .fontNamePlusCircleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.font .font-info .fontNamePlusCircleContainer button i {
+  background-color: white;
+  color: red;
+}
+
+.fontAuthor{
+  font-size: 15px;
+  color: gray;
+}
+.fontText{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+footer{
+  text-align: center;
+  font-size: 14px;
+}
+
+#backtotop {
+  background-color: gray;
+  color: white;
+  position: sticky;
+  bottom: 0vh;
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  z-index: 99;
+}
+
+#backtotop:hover {
+  background-color: black;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .search-container #fontText, .colorButtons, button, select {
+    display: block;
+  }
+  .search-container .colorButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .search-container .colorButtons button {
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  #blackTheme{
+    background-color: black;
+  }
+  main{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .font {
+    width: 240px;
+    flex-grow: 0.3;
+    margin-left: 20px;
+  }
+  .fontGridView {
+    width: 100%;
+    flex-grow: 1;
+  }
+}
